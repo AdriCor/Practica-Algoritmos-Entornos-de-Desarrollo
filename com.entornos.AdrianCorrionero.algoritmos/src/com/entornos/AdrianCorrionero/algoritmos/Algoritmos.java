@@ -26,6 +26,25 @@ public abstract class Algoritmos {
 			}
 			return factorial;
 		}
+		/*devolver verdadero o falso en funcion de si el numero introducido 
+		 * por parametro es primo o no */
+		public static boolean primo (int num) {
+			boolean primo=true;
+			int divisor=2;
+			if (primo && (divisor!=num)) {
+				if (num%divisor==0) {
+					primo=false;
+				}else {
+					divisor++;
+				}
+			}
+			return primo;
+			
+			
+			
+			
+			
+		}
 		
 		
 	
