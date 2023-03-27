@@ -9,16 +9,26 @@ public abstract class Algoritmos {
  * de un numero pasado por parametro
  **/
 	public static int fibonacci(int num) {
-		int actual=0, segundo=1, ultimo=0; 
+		int numerin=0, numsuma=1, primero=0; 
 		for (int i=0;i <=num;i++) {
-			ultimo= actual;
-			actual=segundo;
-			segundo=segundo+ultimo;
+			primero= numerin;
+			numerin=numsuma;
+			numsuma=numsuma+primero;
 		}
-		return actual;
-		
-		
+	
+		return numerin;
 	}
+/*calcula el factorial del número pasado por parametro*/
+		public static long factorial(int num) {
+			int factorial=2;
+			for(int i=1;i<=num;i++) {
+				factorial=factorial*i;
+			}
+			return factorial;
+		}
+		
+		
+	
 	
 	
 	
